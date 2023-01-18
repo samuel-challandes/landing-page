@@ -1,36 +1,42 @@
 * {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 ul {
-    list-style: none;
     margin: 0;
     padding: 0;
+    list-style: none;
     display: flex;
-    gap: 16px;
+    gap: 36px;
 }
 
 a {
     text-decoration: none;
-    color: white;
+    color: #f9faf8;
 }
 
 .header-container {
-    background-color: #1f2937;
-    color: white;
-    padding: 0 300px 0;
+    background-color: #1F2937;
+    color: #E5E7EB;
+}
+
+.temp {
+    margin: 0 auto 96px;
+    width: 66.7%;
+    padding: 18px;
 }
 
 .header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 16px 0 16px;
+    margin-bottom: 96px;
 }
 
 .header-logo {
@@ -39,84 +45,137 @@ a {
     font-weight: bold;
 }
 
-.title-container {
+.subheader-container {
     display: flex;
-    padding: 96px 0 96px;
     gap: 96px;
 }
 
-.title-text {
+.subheader-title {
     flex: 1;
 }
 
-.title {
+.subheader-title > h1 {
     font-size: 48px;
     font-weight: bolder;
-    color:#f9faf8;
-    margin-bottom: 16px;
+    color: #F9FAF8;
 }
 
-.title-subtext {
+.subheader-title > p {
     font-size: 18px;
-    color: #e5e7eb;
-    margin-bottom: 16px;
+    color: #E5E7EB;
 }
 
-.title-image {
-    flex: 1;
-    background-color: #a8a9ac;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* width: 500px; */
-    height: 250px;
+.subheader-title > h1,
+.subheader-title > p {
+    margin: 0;
 }
 
-.title-sign-up {
-    background-color: #3882f6;
-    color: white;
-    padding: 8px 32px 8px;
-    text-align: center;
+button {
+    background-color: #3882F6;
+    color: #E5E7EB;
+    font-weight: bolder;
     border: none;
-    font-weight: bold;
+    padding: 6px 24px;
     border-radius: 4px;
 }
 
-.information {
-    padding: 0 300px 0;
+.subheader-title > button {
+    margin-top: 18px;
 }
 
-.information-header {
+.subheader-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #989899;
+    color: #E5E7EB;
+}
+
+.information-title {
+    text-align: center;
     font-size: 36px;
     font-weight: bolder;
-    color: #1f2937;
+    color: #1F2937;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 56px;
+}
+
+.card-image {
+    height: 150px;
+    width: 150px;
+    border: 4px solid #3882F6;
+    border-radius: 15px;
+}
+
+.card-subtext {
+    width: 150px;
     text-align: center;
-    padding: 56px 0 56px;
 }
 
-.information-container {
-    display: flex;
-    /* gap: 48px; */
-    justify-content: space-around;
+.quote-container {
+    background-color: #E5E7EB;
 }
 
-/* .information-item {
+.quote-container > .temp {
+    margin-top: 96px;
+    margin-bottom: 56px;
+    width: 50%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-} */
-
-.information-image {
-    border: 5px solid #3882f6;
-    max-width: 200px;
-    height: 200px;
-    border-radius: 20px;
-    margin-bottom: 16px;
+    flex-direction: column;
 }
 
-.information-subtext {
-    font-size: 18px;
-    text-align: center;
-    max-width: 200px;
+.quote-body {
+    font-size: 36px;
+    font-weight: light;
+    font-style: italic;
+    color: #1F2937;
+}
 
+.quote-citation {
+    margin-top: 16px;
+    width: 80%;
+    font-size: 18px;
+    text-align: right;
+    font-weight: bolder;
+}
+
+.action-container > .temp {
+    margin-top: 96px;
+    display: flex;
+    background-color: #3882F6;
+    border-radius: 5px;
+    color: #E5E7EB;
+    justify-content: space-between;
+    padding: 56px 136px;
+}
+
+.action-container h3, p {
+    margin: 0;
+}
+
+.call-to-action-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action-container button {
+    border: 2px solid #E5E7EB;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+    color: #E5E7EB;
+    size: 18px;
+    padding: 24px 0 24px;
 }
